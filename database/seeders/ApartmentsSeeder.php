@@ -17,7 +17,7 @@ class ApartmentsSeeder extends Seeder
     {
         $apartments = [
             [
-                "user_id" => "0",
+                "user_id" => 1,
                 "name" => "Ramada Plaza Milano",
                 "slug" => "ramada-plaza-milano",
                 "address" => "Via Stamira d'Ancona, 27, 20127, Milan, Italy",
@@ -27,7 +27,7 @@ class ApartmentsSeeder extends Seeder
             ],
 
             [
-                "user_id" => "0",
+                "user_id" => 1,
                 "name" => "Hotel VIU Milan",
                 "slug" => "hotel-viu-milan",
                 "address" => "Via A. Fioravanti 6, 20154, Milan, Italy",
@@ -37,7 +37,7 @@ class ApartmentsSeeder extends Seeder
             ],
 
             [
-                "user_id" => "0",
+                "user_id" => 1,
                 "name" => "Glam",
                 "slug" => "glam",
                 "address" => "Piazza Duca D'aosta 4/6, 20124, Milan, Italy",
@@ -51,6 +51,7 @@ class ApartmentsSeeder extends Seeder
 
             $newApartment = new Apartment();
 
+            $newApartment->user_id = $apartment["user_id"];
             $newApartment->name = $apartment["name"];
             $newApartment->slug = $apartment["slug"];
             $newApartment->rooms = null;
@@ -61,7 +62,7 @@ class ApartmentsSeeder extends Seeder
             $newApartment->lat = $apartment["lat"];
             $newApartment->lon = $apartment["lon"];
             $newApartment->photo = null;
-            $newApartment->visible = 1;
+            $newApartment->visible = $apartment["visible"];
             $newApartment->save();
         }
     }
