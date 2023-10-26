@@ -30,9 +30,9 @@ class ApartmentsSeeder extends Seeder
                 "user_id" => 1,
                 "name" => "Hotel VIU Milan",
                 "slug" => "hotel-viu-milan",
-                "address" => "Via A. Fioravanti 6, 20154, Milan, Italy",
-                "lat" => "45.48341199944106",
-                "lon" => "9.177795219044416",
+                "address" => "Via Galileo Galilei, 30",
+                "lat" => "45.502868232679766",
+                "lon" => "9.373672466770707",
                 "visible" => true
             ],
 
@@ -40,9 +40,9 @@ class ApartmentsSeeder extends Seeder
                 "user_id" => 1,
                 "name" => "Glam",
                 "slug" => "glam",
-                "address" => "Piazza Duca D'aosta 4/6, 20124, Milan, Italy",
-                "lat" => "45.483844947892365",
-                "lon" => "9.203514637578941",
+                "address" => "Via Lombardia, 26, 20096 Pioltello MI",
+                "lat" => "45.48395136187267",
+                "lon" => "9.324991539722623",
                 "visible" => false
             ],
         ];
