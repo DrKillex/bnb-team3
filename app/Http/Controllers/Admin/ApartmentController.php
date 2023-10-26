@@ -38,7 +38,7 @@ class ApartmentController extends Controller
      */
     public function store(Request $request)
     {
-        $request['slug'] = Apartment::generateSlug($request->name) . - . Auth::user()->id;
+        $request['slug'] = Apartment::generateSlug($request->name) . '-' . Auth::user()->id;
 
         $request['apartment_id'] = Auth::user()->id;
 
