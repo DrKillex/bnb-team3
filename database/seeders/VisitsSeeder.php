@@ -20,19 +20,19 @@ class VisitsSeeder extends Seeder
             [
                 "apartment_id" => 1,
                 "ip" => "79.49.224.173",
-                "date" => ''
+                "date" => '2024-10-03'
             ],
 
             [
                 "apartment_id" => 1,
                 "ip" => "89.89.234.193",
-                "date" => ''
+                "date" => '2024-10-03'
             ],
 
             [
                 "apartment_id" => 2,
                 "ip" => "79.43.227.193",
-                "date" => ''
+                "date" => '2024-10-03'
             ],
         ];
 
@@ -43,7 +43,7 @@ class VisitsSeeder extends Seeder
 
             $newVisit->apartment_id = $visit["apartment_id"];
             $newVisit->ip = $visit["ip"];
-            $newVisit->date = date('Y-m-s H:i-s', time());
+            $newVisit->date = date('Y-m-s');
 
             $newVisit->save();
         }
